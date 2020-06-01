@@ -1,7 +1,7 @@
 ## ♻️ E-coleta
 
 <h1 align="center">
-    <img alt="imagem de perfil do e-coleta" title="e-coleta" src="" width="250px" />
+    <img alt="imagem de perfil do e-coleta" title="e-coleta" src=".github/static/logo.png" width="250px" />
 </h1>
 
 <h2 align="center">
