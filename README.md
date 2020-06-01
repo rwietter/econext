@@ -46,9 +46,11 @@
   - [Express](https://expressjs.com/pt-br/)
   - [Styled Components](https://www.styled-components.com/)
     
-#### ⚙️ Styles:
+#### ⚙️ Plugins de padronização:
   - [Eslint](https://eslint.org)
   - [Prettier](https://prettier.io)
+  - [Husky](https://github.com/typicode/husky)
+  - [Lint-staged](https://github.com/okonet/lint-staged)
 
 ---
 

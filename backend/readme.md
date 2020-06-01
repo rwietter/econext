@@ -39,4 +39,8 @@ yarn add ts-node-dev --dev
 # eslint + prettier
 yarn add eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --dev
 yarn add prettier eslint-config-prettier eslint-plugin-prettier --dev
+
+# Husky + lint-staged
+yarn add husky --dev
+yarn add lint-staged --dev
 ```
