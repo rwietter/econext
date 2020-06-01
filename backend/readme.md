@@ -23,15 +23,15 @@
 ```shell
 # inicializa o projeto
 yarn init -y
-# adiciona o express
+# adiciona o express como dependência
 yarn add express
 # adiciona a definição de types ao express
 yarn add @types/express --dev
 # Adiciona o typescript
 yarn add typescript --dev
-# configura o tscondig
+# configura o tsconfig
 npx tsc --init
-# compila o typescript
+# compila o typeScript
 yarn add ts-node --dev
 # adiciona um observer para detectar mudanças e recompilar
 yarn add ts-node-dev --dev
