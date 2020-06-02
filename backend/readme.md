@@ -57,7 +57,7 @@ yarn add lint-staged --dev
 ### Rotas
 
 - É o endereço completo da requisição
-- Recurso: a entidade do sistemas que é utilizado
+- Recurso: a entidade do sistema que é utilizado
   `http://localhost:3333/{recursos}`
 
 ---
@@ -101,7 +101,6 @@ app.get('/user', (req, res) => {
 #### Route parms
 
 - São parâmetros utilizados para identificar recursos
-- Buscar dados de um único usuário
 - Buscar dados de um único usuário
   `/users/:id`
 
