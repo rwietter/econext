@@ -117,7 +117,7 @@ yarn dev
 
 ---
 
-### Como contribuir
+### 🌐 Como contribuir
 - Faça um fork deste repositório;
 - Crie uma branch com a sua feature: `git checkout -b my-feature`
 - Commit suas mudanças: `git commit -m 'feat: My new feature'`
@@ -131,9 +131,12 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-<strong> Projeto desenvolvido durante a Next Level Week  |  `{ ♻️ } = e-Coleta` </strong>
+<p align="center">
+    <strong> Projeto desenvolvido durante a Next Level Week  |  `{ ♻️ } = e-Coleta`</strong>
+</p>
 
 ---
+
 <p align="center">
     <strong> Feito com 💜 by @rwietter </strong>
 </p>
