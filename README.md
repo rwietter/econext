@@ -5,11 +5,14 @@
 <br/>
 <br/>
 <br/>
-<br/>
 
 <h1 align="center">
     <img alt="imagem de perfil do e-coleta" title="e-coleta" src=".github/static/ecology-vector-icon_6543-15.png" width="250px" />
 </h1>
+
+<h3 align="center"> ⚛️ 📄 🚀 </h3>
+
+<br/>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rwietter/e-coleta" />
@@ -30,8 +33,6 @@
   <a href="#licença">Licença</a>
 </p>
 
-<br/>
-<br/>
 <br/>
 <br/>
 <br/>
@@ -90,7 +91,7 @@ Instale o [Git](https://git-scm.com/downloads), o [Visual Studio Code](https://c
 
 ```shell
 # Clone este repositório
-https://github.com/rwietter/e-coleta.git
+git clone https://github.com/rwietter/e-coleta.git
 
 # Entre no diretório, se for no Windows a barra invertida é \
 cd e-coleta/backend
@@ -116,10 +117,23 @@ yarn dev
 
 ---
 
+### Como contribuir
+- Faça um fork deste repositório;
+- Crie uma branch com a sua feature: `git checkout -b my-feature`
+- Commit suas mudanças: `git commit -m 'feat: My new feature'`
+- Push a sua branch: `git push origin my-feature`
+
+---
+
 ### 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-<bold> Projeto desenvolvido durante a Next Level Week  |  `{ ♻️ } = e-Coleta` </bold> 
+<strong> Projeto desenvolvido durante a Next Level Week  |  `{ ♻️ } = e-Coleta` </strong>
+
+---
+<p align="center">
+    <strong> Feito com 💜 by @rwietter </strong>
+</p>
