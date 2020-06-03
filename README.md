@@ -1,5 +1,9 @@
-<h1 align="center">♻️ e-Coleta</h1>
+<h1 align="center">
+    ♻️ e-Coleta
+</h1>
 
+<br/>
+<br/>
 <br/>
 <br/>
 
@@ -30,6 +34,10 @@
   <a href="#licença">Licença</a>
 </p>
 
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 
@@ -81,7 +89,9 @@
 ---
 
 <h3> Como utilizar </h3>
+
 Instale o [Git](https://git-scm.com/downloads), o [Visual Studio Code](https://code.visualstudio.com/), o [NodeJS^12.16.1 ou superior](https://nodejs.org/en/) e o [Yarn^1.22.4](https://yarnpkg.com/)
+
 ```shell
 # Clone este repositório
 https://github.com/rwietter/e-coleta.git
