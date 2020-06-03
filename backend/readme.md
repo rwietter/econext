@@ -15,6 +15,8 @@
 - Node^v12.16.1
 - Express^4.17.1
 - Cors^2.8.5
+- knex^0.21.1
+- TypeScript^3.9.3
 
 ---
 
