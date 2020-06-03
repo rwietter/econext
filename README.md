@@ -1,4 +1,8 @@
-## ♻️ e-Coleta
+<h1 align="center">♻️ e-Coleta</h1>
+
+<pre width="10px"></pre>
+<pre width="10px"></pre>
+<pre width="10px"></pre>
 
 <h1 align="center">
     <img alt="imagem de perfil do e-coleta" title="e-coleta" src=".github/static/ecology-vector-icon_6543-15.png" width="250px" />
@@ -26,6 +30,10 @@
   <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#licença">Licença</a>
 </p>
+
+<pre width="10px"></pre>
+<pre width="10px"></pre>
+<pre width="10px"></pre>
 
 ---
 
