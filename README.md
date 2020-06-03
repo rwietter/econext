@@ -85,7 +85,7 @@
 
 ---
 
-<h3> Como utilizar </h3>
+<h3> ☑️ Como utilizar </h3>
 
 Instale o [Git](https://git-scm.com/downloads), o [Visual Studio Code](https://code.visualstudio.com/), o [NodeJS^12.16.1 ou superior](https://nodejs.org/en/) e o [Yarn^1.22.4](https://yarnpkg.com/)
 
