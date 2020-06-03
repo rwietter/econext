@@ -45,7 +45,7 @@
 
 ### 🌎 Projeto
 
-**Um dos maiores problemas atualmente é o lixo que descartamos no nosso Planeta. Sem dúvidas o descarte inadequado com a falta de ações sustentáveis como reciclagem, compostagem e reutilização contribuem para isto. O Brasil carece de medidas que fomentem essas ações. Com isso em mente, o e-Coleta é um projeto que une ecologia e sustentabilidade, ou seja, devemos descartar o que não nos sereve mais de maneira adequada para que seja reclicada e reutilizada, assim o projeto propõe melhorar a situação de descarte do lixo e de resíduos. Logo, com a integração de um mapa podemos localizar resíduos, para que os mesmos possam ser entregues em pontos de coletas e recolhidos por empresas e entidades especializadas nisso. Nesse sentido, ele visa auxiliar empresas e entidades que coletam resíduos orgânicos ou inorgânicos que as pessoas precisam descartar em algum momento mas, não sabem onde descartá-lo e, a maneira ecologicamente correta de fazer isso.**
+**Um dos maiores problemas atualmente é o lixo que descartamos no nosso Planeta. Sem dúvidas o descarte inadequado com a falta de ações sustentáveis como reciclagem, compostagem e reutilização contribuem para isto. O Brasil carece de medidas que fomentem essas ações. Com isso em mente, o e-Coleta é um projeto que une ecologia e sustentabilidade, ou seja, devemos descartar o que não nos sereve mais de maneira adequada para que seja reciclada e reutilizada, assim o projeto propõe melhorar a situação de descarte do lixo e de resíduos. Logo, com a integração de um mapa podemos localizar pontos de coletas, para que os mesmos possam ser entregues nesses pontos e possam ser recolhidos por empresas e entidades especializadas nisso. Nesse sentido, ele visa auxiliar empresas e entidades que coletam resíduos orgânicos ou inorgânicos que as pessoas precisam descartar em algum momento mas, não sabem onde descartá-lo e, a maneira ecologicamente correta de fazer isso.**
 
 ---
 
@@ -68,19 +68,19 @@
 - [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
 
-#### 📦 Libraries back-end:
+#### 📦 Libraries back-end
   - [Express](https://expressjs.com/pt-br/)
   - [Knex.JS](http://knexjs.org/)
   - [Sqlite3](https://www.sqlite.org/index.html)
   - [Cors](https://github.com/expressjs/cors)
 
-#### 📦 Libraries front-end:
+#### 📦 Libraries front-end
   - [Styled Components](https://www.styled-components.com/)
 
-#### 📦 Libraries mobile:
+#### 📦 Libraries mobile
   - [Styled Components](https://www.styled-components.com/)
 
-#### 📦 Libraries e plugins de padronização:
+#### 📦 Libraries e plugins de padronização
   - [ESLint](https://eslint.org)
   - [Prettier](https://prettier.io)
   - [Husky](https://github.com/typicode/husky)
