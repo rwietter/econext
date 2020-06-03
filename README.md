@@ -132,7 +132,8 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ---
 
 <p align="center">
-    <strong> Projeto desenvolvido durante a Next Level Week  |  `{ ♻️ } = e-Coleta`</strong>
+    <strong> Projeto desenvolvido durante a Next Level Week || </strong>
+    `{ ♻️ } = e-Coleta`
 </p>
 
 ---
