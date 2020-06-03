@@ -1,11 +1,11 @@
-## ♻️ E-coleta
+## ♻️ e-Coleta
 
 <h1 align="center">
     <img alt="imagem de perfil do e-coleta" title="e-coleta" src=".github/static/ecology-vector-icon_6543-15.png" width="250px" />
 </h1>
 
 <h2 align="center">
-  ♻️ E-coleta
+  ♻️ e-Coleta
 </h2>
 
 <p align="center">
@@ -31,7 +31,7 @@
 
 ### 🌎 Projeto
 
-**Um dos maiores problemas atualmente é o lixo que descartamos no nosso Planeta. Sem dúvidas o descarte inadequado com a falta de ações sustentáveis como reciclagem, compostagem e reutilização contribuem para isto. O Brasil carece de medidas que fomentem essas ações. Com isso em mente, o E-coleta é um projeto que visa melhorar a situação de descarte do lixo e de resíduos, entregar uma solução adequada para o descarte dos mesmos. Assim, com a integração de um mapa podemos localizar resíduos, para que os mesmos possam ser recolhidos por empresas e entidades especializadas nisso. Nesse sentido, ele visa auxiliar empresas e entidades que coletam resíduos orgânicos ou inorgânicos que as pessoas precisam descartar em algum momento mas, não sabem onde descartá-lo e, a maneira ecologicamente correta de fazer isso.**
+**Um dos maiores problemas atualmente é o lixo que descartamos no nosso Planeta. Sem dúvidas o descarte inadequado com a falta de ações sustentáveis como reciclagem, compostagem e reutilização contribuem para isto. O Brasil carece de medidas que fomentem essas ações. Com isso em mente, o e-Coleta é um projeto que une ecologia e sustentabilidade, ou seja, devemos descartar o que não nos sereve mais, de maneira adequada para que seja reclicada e reutilizada, assim o projeto propõe melhorar a situação de descarte do lixo e de resíduos. Assim, com a integração de um mapa podemos localizar resíduos, para que os mesmos possam ser entregues em pontos de coletas e recolhidos por empresas e entidades especializadas nisso. Nesse sentido, ele visa auxiliar empresas e entidades que coletam resíduos orgânicos ou inorgânicos que as pessoas precisam descartar em algum momento mas, não sabem onde descartá-lo e, a maneira ecologicamente correta de fazer isso.**
 
 ---
 
@@ -74,7 +74,7 @@
 
 ---
 
-### Como utilizar
+<h3> Como utilizar </h3>
 Instale o [Git](https://git-scm.com/downloads), o [Visual Studio Code](https://code.visualstudio.com/), o [NodeJS^12.16.1 ou superior](https://nodejs.org/en/) e o [Yarn^1.22.4](https://yarnpkg.com/)
 ```shell
 # Clone este repositório
@@ -110,4 +110,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-<bold> Projeto desenvolvido durante a Next Level Week  |  E-coleta </bold> { ♻️ }
+<bold> Projeto desenvolvido durante a Next Level Week  |  e-Coleta </bold> { ♻️ }
