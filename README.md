@@ -28,7 +28,7 @@
 
 <p align="center">
     <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-documentacao">Documentação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-documentação">Documentação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-%EF%B8%8F-como-utilizar-">Como utilizar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -51,11 +51,13 @@
 
 ### 📑 Documentação
 
-**📑 [Documentação back-end](https://github.com/rwietter/e-coleta/tree/master/backend)**
+<br/>
 
-**📑 [Documentação front-end](https://github.com/rwietter/e-coleta/tree/master/frontend)**
+🔍 [Documentação back-end](https://github.com/rwietter/e-coleta/tree/master/backend)
 
-**📑 [Documentação mobile](https://github.com/rwietter/e-coleta/tree/master/mobile)**
+🔍 [Documentação front-end](https://github.com/rwietter/e-coleta/tree/master/frontend)
+
+🔍 [Documentação mobile](https://github.com/rwietter/e-coleta/tree/master/mobile)
 
 ---
 
