@@ -28,6 +28,7 @@
 
 <p align="center">
     <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-documentacao">Documentação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-%EF%B8%8F-como-utilizar-">Como utilizar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -47,6 +48,8 @@
 **Um dos maiores problemas atualmente é o lixo que descartamos no nosso Planeta. Sem dúvidas o descarte inadequado com a falta de ações sustentáveis como reciclagem, compostagem e reutilização contribuem para isto. O Brasil carece de medidas que fomentem essas ações. Com isso em mente, o e-Coleta é um projeto que une ecologia e sustentabilidade, ou seja, devemos descartar o que não nos sereve mais de maneira adequada para que seja reclicada e reutilizada, assim o projeto propõe melhorar a situação de descarte do lixo e de resíduos. Logo, com a integração de um mapa podemos localizar resíduos, para que os mesmos possam ser entregues em pontos de coletas e recolhidos por empresas e entidades especializadas nisso. Nesse sentido, ele visa auxiliar empresas e entidades que coletam resíduos orgânicos ou inorgânicos que as pessoas precisam descartar em algum momento mas, não sabem onde descartá-lo e, a maneira ecologicamente correta de fazer isso.**
 
 ---
+
+### 📑 Documentação
 
 **📑 [Documentação back-end](https://github.com/rwietter/e-coleta/tree/master/backend)**
 
