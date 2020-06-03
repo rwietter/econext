@@ -14,7 +14,7 @@
 
 - Node^v12.16.1
 - Express^4.17.1
-- @types/express^4.17.6
+- Cors^2.8.5
 
 ---
 
@@ -40,8 +40,11 @@ yarn add knex
 # adiciona o database sqlite3
 yarn add sqlite3
 # executa as migrations
-npx knex migrate:latest --knexfile knexfile.ts migrate:latest
-
+npx knex --knexfile knexfile.ts migrate:latest
+# executa os seeds, que inserem dados padrões ao dB
+npx knex --knexfile knexfile.ts seed:run
+# adiciona o cors
+yarn add cors
 
 # eslint + prettier
 yarn add eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --dev
