@@ -1,7 +1,7 @@
 ## ♻️ E-coleta
 
 <h1 align="center">
-    <img alt="imagem de perfil do e-coleta" title="e-coleta" src=".github/static/logo.png" width="250px" />
+    <img alt="imagem de perfil do e-coleta" title="e-coleta" src=".github/static/ecology-vector-icon_6543-15.png" width="250px" />
 </h1>
 
 <h2 align="center">
@@ -35,19 +35,35 @@
 
 ---
 
-### 🔥 Tecnologias
+**📑 [Documentação back-end](https://github.com/rwietter/e-coleta/tree/master/backend)**
 
-- [NodeJS](https://nodejs.org/en/)
-- [ReactJS](https://reactjs.org)
+**📑 [Documentação front-end](https://github.com/rwietter/e-coleta/tree/master/frontend)**
+
+**📑 [Documentação mobile](https://github.com/rwietter/e-coleta/tree/master/mobile)**
+
+---
+
+### 🚀 Tecnologias
+
+- [Node.JS](https://nodejs.org/en/)
+- [React.JS](https://reactjs.org)
 - [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
 
-#### 🚀 Libraries:
+#### 📦 Libraries back-end:
   - [Express](https://expressjs.com/pt-br/)
+  - [Knex.JS](http://knexjs.org/)
+  - [Sqlite3](https://www.sqlite.org/index.html)
+  - [Cors](https://github.com/expressjs/cors)
+
+#### 📦 Libraries front-end:
   - [Styled Components](https://www.styled-components.com/)
-    
-#### ⚙️ Plugins de padronização:
-  - [Eslint](https://eslint.org)
+
+#### 📦 Libraries mobile:
+  - [Styled Components](https://www.styled-components.com/)
+
+#### 📦 Libraries e plugins de padronização:
+  - [ESLint](https://eslint.org)
   - [Prettier](https://prettier.io)
   - [Husky](https://github.com/typicode/husky)
   - [Lint-staged](https://github.com/okonet/lint-staged)
@@ -64,8 +80,8 @@ Instale o [Git](https://git-scm.com/downloads), o [Visual Studio Code](https://c
 # Clone este repositório
 https://github.com/rwietter/e-coleta.git
 
-# Entre no diretório
-cd e-coleta
+# Entre no diretório, se for no Windows a barra invertida é \
+cd e-coleta/backend
 
 # Instale as dependências
 yarn install
@@ -74,9 +90,15 @@ yarn install
 yarn dev
 
 # Inicie a aplicação no front-end
+cd ..
+cd frontend
+yarn install
 yarn dev
 
 # Inicie a aplicação no mobile
+cd ..
+cd mobile
+yarn install
 yarn dev
 ```
 
