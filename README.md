@@ -1,12 +1,18 @@
-## ♻️ E-coleta
+<h1 align="center">
+    ♻️ e-Coleta
+</h1>
+
+<br/>
+<br/>
+<br/>
 
 <h1 align="center">
     <img alt="imagem de perfil do e-coleta" title="e-coleta" src=".github/static/ecology-vector-icon_6543-15.png" width="250px" />
 </h1>
 
-<h2 align="center">
-  ♻️ E-coleta
-</h2>
+<h3 align="center"> ⚛️ 📄 🚀 </h3>
+
+<br/>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rwietter/e-coleta" />
@@ -21,25 +27,37 @@
 </p>
 
 <p align="center">
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#computer-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#licença">Licença</a>
+    <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-documentação">Documentação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-%EF%B8%8F-como-utilizar-">Como utilizar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-como-contribuir">Contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-licença">Licença</a>
 </p>
+
+<br/>
+<br/>
+<br/>
+<br/>
 
 ---
 
 ### 🌎 Projeto
 
-**Um dos maiores problemas atualmente é o lixo que descartamos no nosso Planeta. Sem dúvidas o descarte inadequado com a falta de ações sustentáveis como reciclagem, compostagem e reutilização contribuem para isto. O Brasil carece de medidas que fomentem essas ações. Com isso em mente, o E-coleta é um projeto que visa melhorar a situação de descarte do lixo e de resíduos, entregar uma solução adequada para o descarte dos mesmos. Assim, com a integração de um mapa podemos localizar resíduos, para que os mesmos possam ser recolhidos por empresas e entidades especializadas nisso. Nesse sentido, ele visa auxiliar empresas e entidades que coletam resíduos orgânicos ou inorgânicos que as pessoas precisam descartar em algum momento mas, não sabem onde descartá-lo e, a maneira ecologicamente correta de fazer isso.**
+**Um dos maiores problemas atualmente é o lixo que descartamos no nosso Planeta. Sem dúvidas o descarte inadequado com a falta de ações sustentáveis como reciclagem, compostagem e reutilização contribuem para isto. O Brasil carece de medidas que fomentem essas ações. Com isso em mente, o e-Coleta é um projeto que une ecologia e sustentabilidade, ou seja, devemos descartar o que não nos sereve mais de maneira adequada para que seja reciclada e reutilizada, assim o projeto propõe melhorar a situação de descarte do lixo e de resíduos. Logo, com a integração de um mapa podemos localizar pontos de coletas, para que os mesmos possam ser entregues nesses pontos e possam ser recolhidos por empresas e entidades especializadas nisso. Nesse sentido, ele visa auxiliar empresas e entidades que coletam resíduos orgânicos ou inorgânicos que as pessoas precisam descartar em algum momento mas, não sabem onde descartá-lo e, a maneira ecologicamente correta de fazer isso.**
 
 ---
 
-**📑 [Documentação back-end](https://github.com/rwietter/e-coleta/tree/master/backend)**
+### 📑 Documentação
 
-**📑 [Documentação front-end](https://github.com/rwietter/e-coleta/tree/master/frontend)**
+<br/>
 
-**📑 [Documentação mobile](https://github.com/rwietter/e-coleta/tree/master/mobile)**
+🔍 [Documentação back-end](https://github.com/rwietter/e-coleta/tree/master/backend)
+
+🔍 [Documentação front-end](https://github.com/rwietter/e-coleta/tree/master/frontend)
+
+🔍 [Documentação mobile](https://github.com/rwietter/e-coleta/tree/master/mobile)
 
 ---
 
@@ -50,19 +68,19 @@
 - [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
 
-#### 📦 Libraries back-end:
+#### 📦 Libraries back-end
   - [Express](https://expressjs.com/pt-br/)
   - [Knex.JS](http://knexjs.org/)
   - [Sqlite3](https://www.sqlite.org/index.html)
   - [Cors](https://github.com/expressjs/cors)
 
-#### 📦 Libraries front-end:
+#### 📦 Libraries front-end
   - [Styled Components](https://www.styled-components.com/)
 
-#### 📦 Libraries mobile:
+#### 📦 Libraries mobile
   - [Styled Components](https://www.styled-components.com/)
 
-#### 📦 Libraries e plugins de padronização:
+#### 📦 Libraries e plugins de padronização
   - [ESLint](https://eslint.org)
   - [Prettier](https://prettier.io)
   - [Husky](https://github.com/typicode/husky)
@@ -74,11 +92,13 @@
 
 ---
 
-### Como utilizar
+<h3> ☑️ Como utilizar </h3>
+
 Instale o [Git](https://git-scm.com/downloads), o [Visual Studio Code](https://code.visualstudio.com/), o [NodeJS^12.16.1 ou superior](https://nodejs.org/en/) e o [Yarn^1.22.4](https://yarnpkg.com/)
+
 ```shell
 # Clone este repositório
-https://github.com/rwietter/e-coleta.git
+git clone https://github.com/rwietter/e-coleta.git
 
 # Entre no diretório, se for no Windows a barra invertida é \
 cd e-coleta/backend
@@ -104,10 +124,27 @@ yarn dev
 
 ---
 
+### 🌐 Como contribuir
+- Faça um fork deste repositório;
+- Crie uma branch com a sua feature: `git checkout -b my-feature`
+- Commit suas mudanças: `git commit -m 'feat: My new feature'`
+- Push a sua branch: `git push origin my-feature`
+
+---
+
 ### 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-<bold> Projeto desenvolvido durante a Next Level Week  |  E-coleta </bold> { ♻️ }
+<p align="center">
+    <strong> Projeto desenvolvido durante a Next Level Week || </strong>
+    { ♻️ } = e-Coleta
+</p>
+
+---
+
+<p align="center">
+    <strong> Feito com 💜 by @rwietter </strong>
+</p>
