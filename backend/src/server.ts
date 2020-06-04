@@ -10,10 +10,7 @@ app.use(cors());
 
 app.use(express.json());
 
-app.use(Routes, (err: Response, req: Request, res: Response) => {
-  res.status(Number(err.status) || 500);
-  res.end();
-});
+app.use(Routes);
 
 app.use('/static', express.static(path.resolve(__dirname, '..', 'static')));
 

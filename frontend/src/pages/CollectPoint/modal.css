@@ -1,0 +1,66 @@
+.react-responsive-modal-overlay {
+  background: rgba(0, 0, 0, 0.931);
+  display: flex;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  padding: 1.2rem;
+}
+
+.react-responsive-modal-modal {
+}
+
+.react-responsive-modal-modalCenter {
+  margin: auto;
+}
+
+.react-responsive-modal-closeButton {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  outline: none;
+  color: #fff;
+}
+
+@keyframes react-responsive-modal-fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes react-responsive-modal-fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.circle-submit {
+  font-size: 5rem;
+  color: #2fb86e;
+}
+
+.modal-content {
+  text-align: center;
+}
+.modal-content > h1 {
+  margin: 4rem auto;
+  font-size: 2rem;
+  color: #fff;
+}
