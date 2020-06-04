@@ -4,6 +4,15 @@
 
 **Além disso, ele traz o conceito de componentização, que nada mais é do que trabalhar a interface em partes separadas, onde as partes que se repetem como um _button_, podem se tornar um componente reutilizável.**
 
+<br/>
+<br/>
+
+<div align="center">
+<img  width="800px" src="./.github/Animação.gif" />
+</div>
+
+<br/>
+<br/>
 ---
 
 ### Tecnologias
