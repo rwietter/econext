@@ -7,8 +7,8 @@ import { FiArrowLeft, FiCheck } from 'react-icons/fi';
 
 import logo from '../../static/site/assets/logo.svg';
 import './collectPoint.css';
-import './modal.css';
-import Modal from './Modal';
+import '../../components/Modal/modal.css';
+import Modal from '../../components/Modal/Modal';
 
 import api from '../../services/api/api';
 
@@ -122,7 +122,13 @@ const CollectPoint = () => {
       items,
     };
     // await api.post('points', data);
-    setOpen(true);
+    if (name && email && whatsapp && uf && city && latitude && longitude && items) {
+      setOpen(true);
+    } else {
+      // const submitError: Element | null = document.querySelector('.submit-error');
+      // submitError?.append('Você não preencheu todos os campos');
+      alert('Você não preencheu todos os campos');
+    }
   }
 
   function handleSelectedItems(id: number) {
