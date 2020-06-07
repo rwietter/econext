@@ -140,3 +140,9 @@ app.post('/users', (request, response) => {
   "age": 25
 }
 ```
+
+### Features
+
+- [Upload de imagens e crypto](https://github.com/expressjs/multer)
+- Serialização
+- Database

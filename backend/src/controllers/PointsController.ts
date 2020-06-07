@@ -25,7 +25,14 @@ class PointsController {
         return res.status(400).json();
       }
 
-      return res.json({ collectPoints });
+      const serializedPoints = collectPoints.map((point) => {
+        return {
+          ...point,
+          image_url: `http://192.168.43.158:3333/static/${point.image}`,
+        };
+      });
+
+      return res.json(serializedPoints);
     } catch (e) {
       console.log(e.message);
     }
@@ -38,8 +45,7 @@ class PointsController {
       const trx = await knex.transaction();
 
       const collectPoint = {
-        image:
-          'https://images.unsplash.com/photo-1582408904325-adf33a0ec010?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60',
+        image: req.file.filename,
         name,
         email,
         whatsapp,
@@ -53,12 +59,15 @@ class PointsController {
 
       // relaciona itens com pontos de coleta
       const point_id = insertedIds[0];
-      const pointItems = items.map((item_id: number) => {
-        return {
-          item_id,
-          point_id,
-        };
-      });
+      const pointItems = items
+        .split(',')
+        .map((item: string) => parseInt(item))
+        .map((item_id: number) => {
+          return {
+            item_id,
+            point_id,
+          };
+        });
       await trx('point_items').insert(pointItems).then(trx.commit).catch(trx.rollback);
 
       return res.json({ id: point_id, ...collectPoint });
@@ -73,15 +82,21 @@ class PointsController {
 
       const collectPoint = await knex('points').where('id', id).first();
 
+      if (!collectPoint) {
+        res.status(400).json({ message: 'Collected point not found' });
+      }
+
+      const serializedPoint = {
+        ...collectPoint,
+        image_url: `http://192.168.43.158:3333/static/${collectPoint.image}`,
+      };
+
       const itemCollect = await knex('items')
         .join('point_items', 'items.id', '=', 'point_items.item_id')
         .where('point_items.point_id', id)
         .select('items.title');
 
-      if (!collectPoint) {
-        res.status(400).json({ message: 'Collected point not found' });
-      }
-      return res.json({ collectPoint, itemCollect });
+      return res.json({ collectPoint: serializedPoint, itemCollect });
     } catch (error) {
       console.log(error.message);
     }
