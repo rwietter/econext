@@ -11,6 +11,7 @@ import '../../components/Modal/modal.css';
 import Modal from '../../components/Modal/Modal';
 
 import api from '../../services/api/api';
+import DropzoneUpload from '../../components/dropzone/dropzone';
 
 type Item = {
   id: number;
@@ -38,6 +39,8 @@ const CollectPoint = () => {
 
   const [selectLocation, setSelectLocation] = useState<[number, number]>([0, 0]); // map marker
   const [initialLocation, setInitialLocation] = useState<[number, number]>([0, 0]); // initial location
+
+  const [selectFileDropzone, setSelectFileDropzone] = useState<File>();
 
   // save data on database
   const [inputData, setInputData] = useState({
@@ -106,22 +109,35 @@ const CollectPoint = () => {
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
+
     const { name, email, whatsapp } = inputData;
     const uf = selectedState;
     const city = selectedCity;
     const [latitude, longitude] = selectLocation;
     const items = selectItems;
-    const data = {
-      name,
-      email,
-      whatsapp,
-      latitude,
-      longitude,
-      city,
-      uf,
-      items,
+
+    const data = new FormData();
+
+    const saveDataOnDatabase = (data: FormData) => {
+      data.append('name', name);
+      data.append('email', email);
+      data.append('whatsapp', whatsapp);
+      data.append('latitude', String(latitude));
+      data.append('longitude', String(longitude));
+      data.append('city', city);
+      data.append('uf', uf);
+      data.append('items', items.join(','));
+      if (selectFileDropzone) {
+        data.append('image', selectFileDropzone);
+      } else {
+        alert('Imagem não selecionada');
+        return;
+      }
     };
-    // await api.post('points', data);
+
+    saveDataOnDatabase(data);
+
+    await api.post('points', data);
     if (name && email && whatsapp && uf && city && latitude && longitude && items) {
       setOpen(true);
     } else {
@@ -155,6 +171,7 @@ const CollectPoint = () => {
       <form action="" onSubmit={handleSubmit}>
         <h1>Cadastro do</h1>
         <h1>ponto de coleta.</h1>
+        <DropzoneUpload onFileUploader={setSelectFileDropzone} />
         <fieldset>
           <legend>
             <h2>Dados</h2>

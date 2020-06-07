@@ -15,6 +15,7 @@ type PointDetail = {
   collectPoint: {
     id: number;
     image: string;
+    image_url: string;
     name: string;
     city: string;
     uf: string;
@@ -65,7 +66,7 @@ const Detail: React.FC = () => {
         <TouchableOpacity onPress={handleNavigatePoints}>
           <Icon name="arrow-left" size={32} color="#34cb79" />
         </TouchableOpacity>
-        <Image style={styles.pointImage} source={{ uri: pointDetail.collectPoint.image }}></Image>
+        <Image style={styles.pointImage} source={{ uri: pointDetail.collectPoint.image_url }}></Image>
         <Text style={styles.pointName}>{pointDetail.collectPoint.name}</Text>
         <Text style={styles.pointItems}>{pointDetail.itemCollect.map((item) => item.title).join(', ')}</Text>
         <View style={styles.address}>

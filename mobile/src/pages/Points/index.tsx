@@ -20,6 +20,7 @@ type collectPoints = {
   id: number;
   name: string;
   image: string;
+  image_url: string;
   latitude: number;
   longitude: number;
 };
@@ -113,7 +114,7 @@ function Point() {
                 longitudeDelta: 0.014,
               }}
             >
-              {points.map(({ id, image, latitude, longitude, name }) => (
+              {points.map(({ id, image_url, latitude, longitude, name }) => (
                 <Marker
                   key={String(id)}
                   style={styles.mapMarker}
@@ -124,7 +125,7 @@ function Point() {
                   onPress={() => handleNavigateDetail(id)}
                 >
                   <View style={styles.mapMarkerContainer}>
-                    <Image style={styles.mapMarkerImage} source={{ uri: image }}></Image>
+                    <Image style={styles.mapMarkerImage} source={{ uri: image_url }}></Image>
                     <Text style={styles.mapMarkerTitle}>{name}</Text>
                   </View>
                 </Marker>
