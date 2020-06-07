@@ -40,7 +40,7 @@
 <br/>
 
 <h1 align="center">
-    <p> Em desenvolvimento :construction: </p> 
+    <p> Em desenvolvimento :construction: </p>
     <img alt="darkmode do e-coleta" title="e-coleta" src="./frontend/.github/dark.PNG" width="700px" />
     <img alt="light do e-coleta" title="e-coleta" src="./frontend/.github/light.PNG" width="700px" />
 </h1>
