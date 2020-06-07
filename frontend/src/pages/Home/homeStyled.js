@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Home = styled.div`
   height: 100vh;
-  background: url(${Background}) no-repeat 39.5rem bottom;
+  background: url(${({ theme }) => theme.backgroundImage}) no-repeat 35.5rem bottom;
 `;
 
 const Content = styled.div`
@@ -12,7 +12,7 @@ const Content = styled.div`
   height: 100%;
   max-width: 70rem;
   margin: 0 auto;
-  padding: 0 1.875rem;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -25,7 +25,12 @@ const Content = styled.div`
 
 const Header = styled.header`
   margin: 3rem 0 0;
-
+  height: 2vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
   @media (max-width: 9em) {
     margin: 2rem auto 0;
   }
@@ -44,8 +49,8 @@ const Main = styled.main`
 `;
 
 const H1 = styled.h1`
-  font-size: 54px;
-  color: #322153;
+  font-size: 2.1rem;
+  color: ${({ theme }) => theme.text};
 
   @media (max-width: 9em) {
     font-size: 2rem;
@@ -53,9 +58,10 @@ const H1 = styled.h1`
 `;
 
 const P = styled.p`
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-top: 1.5rem;
   line-height: 4vh;
+  color: ${({ theme }) => theme.textBorred};
 
   @media (max-width: 9em) {
     font-size: 1rem;
@@ -65,7 +71,7 @@ const P = styled.p`
 const StyledLink = styled(Link)`
   width: 100%;
   max-width: 22rem;
-  height: 4rem;
+  height: 3.5rem;
   background: #34cb79;
   border-radius: 0.3rem;
   display: flex;

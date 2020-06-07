@@ -2,14 +2,20 @@ import React from 'react';
 import { FiLogIn } from 'react-icons/fi';
 
 import * as S from './homeStyled';
+import ToggleTheme from '../../components/ToogleTheme/ToogleTheme';
 import logo from '../../static/site/assets/logo.svg';
 
-function Home() {
+type Toggle = {
+  theme: string | boolean;
+  toggleTheme: string | boolean;
+};
+const Home: React.FC<Toggle> = ({ theme, toggleTheme }) => {
   return (
     <S.Home>
       <S.Content>
         <S.Header>
           <img src={logo} alt="logotipo do ecoleta" />
+          <ToggleTheme theme={theme} toggleTheme={toggleTheme} />
         </S.Header>
         <S.Main>
           <S.H1>Seu marketplace de coleta de resíduos.</S.H1>
@@ -30,5 +36,5 @@ function Home() {
       </S.Content>
     </S.Home>
   );
-}
+};
 export default Home;

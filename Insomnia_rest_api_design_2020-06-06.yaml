@@ -1,0 +1,150 @@
+_type: export
+__export_format: 4
+__export_date: 2020-06-07T00:06:18.891Z
+__export_source: insomnia.desktop.app:v2020.2.1
+resources:
+  - _id: req_be2e98283270489ea3b44ad6264c836b
+    authentication: {}
+    body: {}
+    created: 1591135637675
+    description: Lista ponto de coleta por cidade, estado ou por itens
+    headers: []
+    isPrivate: false
+    metaSortKey: -1591135637675
+    method: GET
+    modified: 1591484200987
+    name: getFilteredList
+    parameters:
+      - description: ""
+        id: pair_d9dd4985a51a411db13555bfbba2ddc8
+        name: city
+        value: Santa Rosa
+      - description: ""
+        id: pair_3aca5fcc26fd45deb72e5403bc37e4f3
+        name: uf
+        value: RS
+      - description: ""
+        id: pair_915a986403fe41a9b2ae1c043124095b
+        name: items
+        value: 3,5
+    parentId: wrk_1643285189a9498699100037d71184b4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:3333/points
+    _type: request
+  - _id: wrk_1643285189a9498699100037d71184b4
+    created: 1591102467558
+    description: ""
+    modified: 1591102467558
+    name: e-coleta
+    parentId: null
+    scope: null
+    _type: workspace
+  - _id: req_df85fc29693342c091c17ca6714043de
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Mercado do seu Jonas",
+        	"email": "mauriciobw17@gmail.com",
+        	"whatsapp": "5599132946",
+        	"latitude": -27.8700173,
+        	"longitude": -54.4797002,
+        	"city": "Santa Rosa",
+        	"uf": "RS",
+        	"items": [3,5]
+        }
+    created: 1591117579414
+    description: Cria um novo ponto de coleta
+    headers:
+      - id: pair_90a3b5db914c48f28e3181a07458af84
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1591117579414
+    method: POST
+    modified: 1591484040324
+    name: postPoints
+    parameters: []
+    parentId: wrk_1643285189a9498699100037d71184b4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:3333/points
+    _type: request
+  - _id: req_f9c6d88ab40c49909125a5eccc556a6b
+    authentication: {}
+    body: {}
+    created: 1591115750452
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1591115750452
+    method: GET
+    modified: 1591115820904
+    name: getItems
+    parameters: []
+    parentId: wrk_1643285189a9498699100037d71184b4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:3333/items
+    _type: request
+  - _id: req_189914d0d7824fc2a6e217ec664c0574
+    authentication: {}
+    body: {}
+    created: 1591123307471
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1588092821215
+    method: GET
+    modified: 1591484071494
+    name: getCollectPoint
+    parameters: []
+    parentId: wrk_1643285189a9498699100037d71184b4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:3333/points/11
+    _type: request
+  - _id: env_437a66ac568da982b86e6e77252058c094f7ac22
+    color: null
+    created: 1591102467756
+    data: {}
+    dataPropertyOrder: null
+    isPrivate: false
+    metaSortKey: 1591102467756
+    modified: 1591102467756
+    name: Base Environment
+    parentId: wrk_1643285189a9498699100037d71184b4
+    _type: environment
+  - _id: jar_437a66ac568da982b86e6e77252058c094f7ac22
+    cookies: []
+    created: 1591102467760
+    modified: 1591102467760
+    name: Default Jar
+    parentId: wrk_1643285189a9498699100037d71184b4
+    _type: cookie_jar
+  - _id: spc_0fde5c8357324388949a35ee52e45925
+    contentType: yaml
+    contents: ""
+    created: 1591144113075
+    fileName: e-coleta
+    modified: 1591144113075
+    parentId: wrk_1643285189a9498699100037d71184b4
+    _type: api_spec

@@ -7,5 +7,10 @@
     "markdown",
     "latex",
     "plaintext"
+  ],
+  "eslint.workingDirectories": [
+    "../frontend",
+    "./backend",
+    "./mobile"
   ]
 }

@@ -4,10 +4,15 @@ import React from 'react';
 import Home from './pages/Home/Home';
 import CollectPoint from './pages/CollectPoint/CollectPoint';
 
-const Routes = () => {
+type Toggle = {
+  theme: any;
+  toggleTheme: any;
+};
+
+const Routes: React.FC<Toggle> = ({ theme, toggleTheme }) => {
   return (
     <BrowserRouter>
-      <Route exact component={Home} path="/" />
+      <Route exact render={(props) => <Home theme={theme} toggleTheme={toggleTheme} />} path="/" />
       <Route component={CollectPoint} path="/create-collect-point" />
     </BrowserRouter>
   );
