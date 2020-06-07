@@ -139,8 +139,18 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ---
 
 <p align="center">
-    <strong> Projeto desenvolvido durante a Next Level Week || </strong>
+    <strong> Projeto desenvolvido durante a Next Level Week by RocketSeat || </strong>
     { ♻️ } = e-Coleta
+</p>
+
+---
+
+<p align="center">
+    <strong> Projeto desenvolvido para fins de estudo. </strong>
+</p>
+
+<p align="center">
+    <strong> A Next Level Week (NLW) foi ministrada por <a href="https://twitter.com/dieegosf">Diego Fernandes</a></strong>
 </p>
 
 ---
