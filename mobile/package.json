@@ -59,7 +59,7 @@
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "eslint --fix",
-      "git add"
+      "git add -A"
     ]
   },
   "private": true
