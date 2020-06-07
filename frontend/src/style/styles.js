@@ -13,6 +13,9 @@ export const lightTheme = {
   logo: LogoLight,
   title: '#c12b5c',
   link: '#0c9c5c',
+  primaryColor : '#34cb79',
+  titleColor : '#322153',
+  textColor : '#6c6c80',
   gradient: 'linear-gradient(#39598A, #79D7ED)',
 };
 
@@ -26,5 +29,8 @@ export const darkTheme = {
   logo: LogoDark,
   title: '#df7296',
   link: '#33c785',
+  primaryColor: '#34cb79',
+  titleColor: '#322153',
+  textColor: '#6c6c80',
   gradient: 'linear-gradient(90deg, #11998e 0%,#38ef7d 100% )',
 };

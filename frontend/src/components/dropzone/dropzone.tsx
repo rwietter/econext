@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 
-import './styles.css';
+import * as S from './styles';
 import { FiUpload } from 'react-icons/fi';
 import { useState } from 'react';
 
@@ -27,17 +27,19 @@ const DropzoneUpload: React.FC<FileUploader> = ({ onFileUploader }) => {
   });
 
   return (
-    <div className="dropzone" {...getRootProps()}>
+    <S.Dropzone className="dropzone" {...getRootProps()}>
       <input {...getInputProps()} accept="image/*" />
       {selectedFile ? (
-        <img src={selectedFile} alt="Ponto de coleta thumbnail" />
+        <S.Img src={selectedFile} alt="Ponto de coleta thumbnail" />
       ) : (
-        <p>
-          <FiUpload />
+        <S.P>
+          <S.Svg>
+            <FiUpload size={32} />
+          </S.Svg>
           Faça upload de uma imagem do estabelecimento.
-        </p>
+        </S.P>
       )}
-    </div>
+    </S.Dropzone>
   );
 };
 export default DropzoneUpload;

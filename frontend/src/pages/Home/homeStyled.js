@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Background from '../../static/site/assets/home-background.svg';
+// import Background from '../../static/site/assets/home-background.svg';
 import { Link } from 'react-router-dom';
 
 const Home = styled.div`

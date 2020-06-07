@@ -1,17 +1,16 @@
 import React, { useEffect, useState, ChangeEvent, FormEvent } from 'react';
-import { Link } from 'react-router-dom';
-import { Map, TileLayer, Marker } from 'react-leaflet';
+import { TileLayer, Marker } from 'react-leaflet';
 import { LeafletMouseEvent } from 'leaflet';
 import axios from 'axios';
-import { FiArrowLeft, FiCheck } from 'react-icons/fi';
-
-import logo from '../../static/site/assets/logo.svg';
-import './collectPoint.css';
-import '../../components/Modal/modal.css';
-import Modal from '../../components/Modal/Modal';
 
 import api from '../../services/api/api';
+
+import Modal from '../../components/Modal/Modal';
+import logo from '../../static/site/assets/logo.svg';
 import DropzoneUpload from '../../components/dropzone/dropzone';
+
+import '../../components/Modal/modal.css';
+import * as S from './styles';
 
 type Item = {
   id: number;
@@ -160,106 +159,108 @@ const CollectPoint = () => {
   }
 
   return (
-    <div id="page-create-point">
-      <header>
+    <S.CreatePointDiv>
+      <S.Header>
         <img src={logo} alt="logo do ecoleta" />
-        <Link to="/">
-          <FiArrowLeft />
+        <S.link to="/">
+          <S.fiArrowLeft />
           <p>Voltar para a página de cadastro</p>
-        </Link>
-      </header>
-      <form action="" onSubmit={handleSubmit}>
-        <h1>Cadastro do</h1>
-        <h1>ponto de coleta.</h1>
-        <DropzoneUpload onFileUploader={setSelectFileDropzone} />
-        <fieldset>
-          <legend>
-            <h2>Dados</h2>
-          </legend>
-          <div className="field">
-            <label htmlFor="entidade">Nome da entidade</label>
-            <input type="text" autoComplete="none" name="name" id="name" onChange={handleInputChange} />
-          </div>
-          <div className="field-group">
-            <div className="field">
-              <label htmlFor="email">E-mail</label>
-              <input type="email" autoComplete="none" name="email" id="email" onChange={handleInputChange} />
-            </div>
-            <div className="field">
-              <label htmlFor="whatsapp">Whatsapp</label>
-              <input type="text" autoComplete="none" name="whatsapp" id="whatsapp" onChange={handleInputChange} />
-            </div>
-          </div>
-        </fieldset>
+        </S.link>
+      </S.Header>
+      <S.form action="" onSubmit={handleSubmit}>
+        <S.h1>Cadastro do</S.h1>
+        <S.h1>ponto de coleta.</S.h1>
 
-        <fieldset>
-          <legend>
-            <h2>Endereço</h2>
-            <span>Selecione o endereço no mapa abaixo</span>
-          </legend>
-          <Map center={initialLocation} zoom={8} onclick={handleClickMapLocation}>
+        <DropzoneUpload onFileUploader={setSelectFileDropzone} />
+
+        <S.fieldset>
+          <S.legend>
+            <S.h2>Dados</S.h2>
+          </S.legend>
+          <S.field>
+            <S.label htmlFor="entidade">Nome da entidade</S.label>
+            <S.input autoComplete="none" name="name" id="name" onChange={handleInputChange} />
+          </S.field>
+          <S.fieldGroup>
+            <S.field>
+              <S.label htmlFor="email">E-mail</S.label>
+              <S.input autoComplete="none" name="email" id="email" onChange={handleInputChange} />
+            </S.field>
+            <S.field>
+              <S.label htmlFor="whatsapp">Whatsapp</S.label>
+              <S.input autoComplete="none" name="whatsapp" id="whatsapp" onChange={handleInputChange} />
+            </S.field>
+          </S.fieldGroup>
+        </S.fieldset>
+
+        <S.fieldset>
+          <S.legend>
+            <S.h2>Endereço</S.h2>
+            <S.span>Selecione o endereço no mapa abaixo</S.span>
+          </S.legend>
+          <S.leafletMap center={initialLocation} zoom={7} onclick={handleClickMapLocation}>
             <TileLayer
               attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <Marker position={selectLocation} />
-          </Map>
-          <div className="field-group">
-            <div className="field">
-              <label htmlFor="uf" className="uf">
+          </S.leafletMap>
+          <S.fieldGroup>
+            <S.field>
+              <S.label htmlFor="uf" className="uf">
                 Estado (UF)
-              </label>
-              <select name="uf" id="uf" value={selectedState} onChange={handleSelectState}>
+              </S.label>
+              <S.select name="uf" id="uf" value={selectedState} onChange={handleSelectState}>
                 <option value="0">Selecione uma opção</option>
                 {initialState.map((state) => (
                   <option key={state} value={state}>
                     {state}
                   </option>
                 ))}
-              </select>
-            </div>
-            <div className="field">
-              <label htmlFor="uf" className="uf">
+              </S.select>
+            </S.field>
+            <S.field>
+              <S.label htmlFor="uf" className="uf">
                 Cidade
-              </label>
-              <select name="city" id="city" onChange={handleSelectedCity}>
+              </S.label>
+              <S.select name="city" id="city" onChange={handleSelectedCity}>
                 <option value="0">Selecione uma cidade</option>
                 {city.map((city) => (
                   <option key={city} value={city}>
                     {city}
                   </option>
                 ))}
-              </select>
-            </div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>
-            <h2>Itens de coleta</h2>
-            <span>Selecione um ou mais itens abaixo</span>
-          </legend>
-          <ul className="items-grid">
+              </S.select>
+            </S.field>
+          </S.fieldGroup>
+        </S.fieldset>
+        <S.fieldset>
+          <S.legend>
+            <S.h2>Itens de coleta</S.h2>
+            <S.span>Selecione um ou mais itens abaixo</S.span>
+          </S.legend>
+          <S.ulGrid>
             {items.map(({ id, image_url, title }) => (
-              <li
+              <S.liGrid
                 className={selectItems.includes(id) ? 'selected' : ''}
                 key={id}
                 onClick={() => handleSelectedItems(id)}
               >
                 <img src={image_url} alt="" />
-                <span>{title}</span>
-              </li>
+                <S.spanGrid>{title}</S.spanGrid>
+              </S.liGrid>
             ))}
-          </ul>
-        </fieldset>
+          </S.ulGrid>
+        </S.fieldset>
         <div>
           <div>
-            <FiCheck className="form-button__ficheck" />
-            <button type="submit">Cadastrar ponto de coleta</button>
+            <S.buttonIcon />
+            <S.button type="submit">Cadastrar ponto de coleta</S.button>
           </div>
         </div>
-      </form>
+      </S.form>
       {open && <Modal isOpen={open} setClose={setModalClose} />}
-    </div>
+    </S.CreatePointDiv>
   );
 };
 export default CollectPoint;

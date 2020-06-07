@@ -1,33 +1,35 @@
-/* #page-create-point {
+import styled from "styled-components";
+import { Link } from 'react-router-dom';
+import { FiArrowLeft, FiCheck } from 'react-icons/fi';
+import { Map } from 'react-leaflet';
+
+export const CreatePointDiv = styled.div`
   width: 100%;
   max-width: 1100px;
-
   margin: 0 auto;
-} */
+`
 
-/* .header {
+export const Header = styled.header`
   margin-top: 48px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+`
 
-.header a {
-  color: var(--title-color);
+export const link = styled(Link)`
+  color: ${({theme}) => theme.titleColor};
   font-weight: bold;
   text-decoration: none;
-
   display: flex;
   align-items: center;
-}
+`
 
-.header a svg {
+export const fiArrowLeft = styled(FiArrowLeft)`
   margin-right: 16px;
-  color: var(--primary-color);
-}
+  color: ${({theme}) => theme.primaryColor};
+`
 
-.form {
+export const form = styled.form`
   margin: 80px auto;
   padding: 64px;
   max-width: 730px;
@@ -36,62 +38,74 @@
 
   display: flex;
   flex-direction: column;
-}
+`
 
-.form h1 {
+export const h1 = styled.h1`
   font-size: 36px;
-}
+`
 
-.form fieldset {
+export const fieldset = styled.fieldset`
   margin-top: 64px;
   min-inline-size: auto;
   border: 0;
-}
+`
 
-.form legend {
+export const legend = styled.legend`
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
-}
+`
 
-.form legend h2 {
+export const h2 = styled.h2`
   font-size: 24px;
-} */
+`
 
-/* .form legend span {
+export const span = styled.span`
   font-size: 14px;
   font-weight: normal;
   color: var(--text-color);
-}
+`
 
-.form .field-group {
-  flex: 1;
-  display: flex;
-}
-
-.form .field {
+export const field = styled.div`
   flex: 1;
 
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
-} */
 
-/* .field input[type='text'],
-.field input[type='email'],
-.field input[type='number'] {
+  & + & {
+    margin-left: 2rem;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+`
+
+export const fieldGroup = styled.div`
   flex: 1;
-  background: #f0f0f5;
-  border-radius: 8px;
-  border: 0;
-  padding: 16px 24px;
-  font-size: 16px;
-  color: #6c6c80;
-} */
+  display: flex;
+`
 
-/* .field select {
+export const input = styled.input.attrs(({ name }) => ({
+  type: name === 'name' ? 'name' : name === 'email' ? 'email' : 'number'
+}))`
+  flex: 1;
+  background: ${({ theme }) => theme.body};
+  border-radius: 0.5rem;
+  border: 0;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  color: ${({ theme }) => theme.textColor};
+
+  &::placeholder{
+    color: #a0a0b2;
+  }
+`;
+
+export const select = styled.select`
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -102,53 +116,24 @@
   padding: 16px 24px;
   font-size: 16px;
   color: #6c6c80;
-} */
+`
 
-/* .field input::placeholder {
-  color: #a0a0b2;
-} */
-
-/* .field label {
+export const label = styled.label`
   font-size: 14px;
   margin-bottom: 8px;
-} */
+`
 
-/* .field :disabled {
-  cursor: not-allowed;
-} */
-
-/* .field-group .field + .field {
-  margin-left: 24px;
-} */
-
-/* .field-group input + input {
-  margin-left: 24px;
-} */
-
-/* .field-check {
-  flex-direction: row;
-  align-items: center;
-} */
-
-/* .field-check input[type='checkbox'] {
-  background: #f0f0f5;
-} */
-
-/* .field-check label {
-  margin: 0 0 0 8px;
-} */
-
-/* .leaflet-container {
+export const leafletMap = styled(Map)`
   width: 100%;
   height: 350px;
   border-radius: 8px;
   margin-bottom: 24px;
-} */
+`;
 
-/* .form button {
+export const button = styled.button`
   width: 290px;
   height: 56px;
-  background: var(--primary-color);
+  background: ${(props) => props.theme.primaryColor};
   border-radius: 8px;
   color: #fff;
   font-weight: bold;
@@ -160,12 +145,16 @@
   transition: background-color 0.2s;
   cursor: pointer;
   padding: 0 20px 0 60px;
-} */
 
-/* .form-button__ficheck {
+  &:hover {
+    background: #2fb86e;
+  }
+`
+
+export const buttonIcon = styled(FiCheck) `
   width: 50px;
   height: 56px;
-  background: var(--primary-color);
+  background: ${(props) => props.theme.primaryColor};
   border-radius: 8px;
   outline: none;
   color: #fff;
@@ -175,20 +164,16 @@
   margin-top: 40px;
   cursor: default;
   position: absolute;
-} */
+`
 
-/* .form button:hover {
-  background: #2fb86e;
-} */
-
-/* .items-grid {
+export const ulGrid = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   list-style: none;
-} */
+`
 
-/* .items-grid li {
+export const liGrid = styled.li`
   background: #f5f5f5;
   border: 2px solid #f5f5f5;
   height: 180px;
@@ -203,18 +188,22 @@
   text-align: center;
 
   cursor: pointer;
-} */
 
-/* .items-grid li span {
+  &::selection{
+    background: #e1faec;
+    border: 2px solid #34cb79;
+  }
+  ${({ className }) => className && `
+    background: #e1faec;
+    border: 2px solid #34cb79;
+  `}
+`
+
+export const spanGrid = styled.span`
   flex: 1;
   margin-top: 12px;
 
   display: flex;
   align-items: center;
-  color: var(--title-color);
-}
-
-.items-grid li.selected {
-  background: #e1faec;
-  border: 2px solid #34cb79;
-} */
+  color: ${({ theme }) => theme.titleColor};
+`

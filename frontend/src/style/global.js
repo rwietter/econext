@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
-const primaryColor = '#34cb79';
-const titleColor = '#322153';
+// const primaryColor = '#34cb79';
+// const titleColor = '#322153';
 const textColor = '#6c6c80';
 
 const GlobalStyle = createGlobalStyle`
