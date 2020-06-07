@@ -22,7 +22,7 @@
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/rwietter/e-coleta" />
 
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/rwietter/e-coleta" />
-  
+
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen" />
 </p>
 
@@ -38,6 +38,12 @@
 
 <br/>
 <br/>
+
+<h1 align="center">
+    <img alt="darkmode do e-coleta" title="e-coleta" src="./frontend/.github/dark.PNG" width="500px" />
+    <img alt="light do e-coleta" title="e-coleta" src="./frontend/.github/light.PNG" width="500px" />
+</h1>
+
 <br/>
 <br/>
 
