@@ -97,7 +97,7 @@
 
 ### 🔖 Layout
 
-<h3>O Layout pode ser encontrado <a href="./frontend/src/satic/site/layout">aqui</a></h3>
+<h3>O Layout pode ser encontrado <a href="https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta">aqui</a></h3>
 
 ---
 
