@@ -97,6 +97,8 @@
 
 ### 🔖 Layout
 
+<h3>O Layout pode ser encontrado <a href="./frontend/src/satic/site/layout">aqui</a></h3>
+
 ---
 
 <h3> ☑️ Como utilizar </h3>
