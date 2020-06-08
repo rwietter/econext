@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiLogIn } from 'react-icons/fi';
 
-import * as S from './homeStyled';
+import * as S from './styles';
 import ToggleTheme from '../../components/ToogleTheme/ToogleTheme';
 import logo from '../../static/site/assets/logo.svg';
 
@@ -9,6 +9,7 @@ type Toggle = {
   theme: string | boolean;
   toggleTheme: string | boolean;
 };
+
 const Home: React.FC<Toggle> = ({ theme, toggleTheme }) => {
   return (
     <S.Home>

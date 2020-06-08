@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Dropzone = styled.div`
   height: 300px;
-  background: #e1faec;
+  background: ${({theme}) => theme.dropzone};
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -15,13 +15,13 @@ export const P = styled.p`
   width: calc(100% - 60px);
   height: calc(100% - 60px);
   border-radius: 10px;
-  border: 1px dashed #4ecb79;
+  border: 1px dashed ${({theme}) => theme.link};
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #333;
+  color: ${({theme}) => theme.textForm};
 `;
 
 export const Img = styled.img`

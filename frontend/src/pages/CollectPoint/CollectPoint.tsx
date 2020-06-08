@@ -163,7 +163,7 @@ const CollectPoint = () => {
       <S.Header>
         <img src={logo} alt="logo do ecoleta" />
         <S.link to="/">
-          <S.fiArrowLeft />
+          <S.fiArrowLeft size={24} />
           <p>Voltar para a página de cadastro</p>
         </S.link>
       </S.Header>

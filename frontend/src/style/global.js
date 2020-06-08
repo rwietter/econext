@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
   input,
   button {
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 62.5%;
   }
   h1,

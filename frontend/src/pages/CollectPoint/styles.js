@@ -25,7 +25,7 @@ export const link = styled(Link)`
 `
 
 export const fiArrowLeft = styled(FiArrowLeft)`
-  margin-right: 16px;
+  margin-right: 1rem;
   color: ${({theme}) => theme.primaryColor};
 `
 
@@ -33,7 +33,7 @@ export const form = styled.form`
   margin: 80px auto;
   padding: 64px;
   max-width: 730px;
-  background: #fff;
+  background: ${({ theme }) => theme.form};
   border-radius: 8px;
 
   display: flex;
@@ -42,6 +42,7 @@ export const form = styled.form`
 
 export const h1 = styled.h1`
   font-size: 36px;
+  color: ${({ theme }) => theme.textForm}
 `
 
 export const fieldset = styled.fieldset`
@@ -60,12 +61,13 @@ export const legend = styled.legend`
 
 export const h2 = styled.h2`
   font-size: 24px;
+  color: ${({ theme }) => theme.textForm}
 `
 
 export const span = styled.span`
   font-size: 14px;
   font-weight: normal;
-  color: var(--text-color);
+  color: ${({ theme }) => theme.textForm};
 `
 
 export const field = styled.div`
@@ -93,15 +95,15 @@ export const input = styled.input.attrs(({ name }) => ({
   type: name === 'name' ? 'name' : name === 'email' ? 'email' : 'number'
 }))`
   flex: 1;
-  background: ${({ theme }) => theme.body};
+  background: ${({ theme }) => theme.inputBackground};
   border-radius: 0.5rem;
   border: 0;
   padding: 1rem 1.5rem;
   font-size: 1rem;
-  color: ${({ theme }) => theme.textColor};
+  color: ${({ theme }) => theme.inputText};
 
   &::placeholder{
-    color: #a0a0b2;
+    color: ${({ theme }) => theme.select};
   }
 `;
 
@@ -110,17 +112,19 @@ export const select = styled.select`
   -moz-appearance: none;
   appearance: none;
   flex: 1;
-  background: #f0f0f5;
+  background: ${({ theme }) => theme.inputBackground};
   border-radius: 8px;
   border: 0;
   padding: 16px 24px;
+  outline: 0ch;
   font-size: 16px;
-  color: #6c6c80;
+  color: ${({ theme }) => theme.inputText};
 `
 
 export const label = styled.label`
   font-size: 14px;
   margin-bottom: 8px;
+  color: ${({ theme }) => theme.textForm};
 `
 
 export const leafletMap = styled(Map)`
@@ -144,7 +148,7 @@ export const button = styled.button`
   margin-top: 40px;
   transition: background-color 0.2s;
   cursor: pointer;
-  padding: 0 20px 0 60px;
+  padding: 0 1.25rem 0 3.5rem;
 
   &:hover {
     background: #2fb86e;
@@ -152,16 +156,16 @@ export const button = styled.button`
 `
 
 export const buttonIcon = styled(FiCheck) `
-  width: 50px;
-  height: 56px;
+  width: 55px;
+  height: 50px;
   background: ${(props) => props.theme.primaryColor};
-  border-radius: 8px;
+  border-radius: 0.5rem;
   outline: none;
   color: #fff;
   font-weight: bold;
   border: 0;
   align-self: flex-end;
-  margin-top: 40px;
+  margin-top: 2.5rem;
   cursor: default;
   position: absolute;
 `
@@ -174,34 +178,27 @@ export const ulGrid = styled.ul`
 `
 
 export const liGrid = styled.li`
-  background: #f5f5f5;
-  border: 2px solid #f5f5f5;
+  background: ${({ theme }) => theme.inputBackground};
+  border: 2px ${({ theme }) => theme.inputText};
   height: 180px;
   border-radius: 8px;
   padding: 32px 24px 16px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
   text-align: center;
-
   cursor: pointer;
 
-  &::selection{
-    background: #e1faec;
+  ${(props) => props.className === 'selected' ? `
     border: 2px solid #34cb79;
+  ` : ''
   }
-  ${({ className }) => className && `
-    background: #e1faec;
-    border: 2px solid #34cb79;
-  `}
 `
 
 export const spanGrid = styled.span`
   flex: 1;
-  margin-top: 12px;
+  margin-top: 0.7rem;
 
   display: flex;
   align-items: center;
