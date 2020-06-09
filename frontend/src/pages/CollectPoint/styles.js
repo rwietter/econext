@@ -14,14 +14,21 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem 0 2rem;
+  flex-wrap: wrap;
 `
 
 export const link = styled(Link)`
   color: ${({theme}) => theme.titleColor};
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   display: flex;
   align-items: center;
+  @media(max-width: 575px){
+    &:nth-child(2){
+      margin-top: 32px;
+    }
+  }
 `
 
 export const fiArrowLeft = styled(FiArrowLeft)`
@@ -46,12 +53,13 @@ export const form = styled.form`
 
 export const h1 = styled.h1`
   font-size: 2rem;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 600;
   color: ${({ theme }) => theme.textForm}
 `
 
 export const fieldset = styled.fieldset`
   margin-top: 3rem;
-  min-inline-size: auto;
   border: 0;
 `
 
@@ -65,6 +73,8 @@ export const legend = styled.legend`
 
 export const h2 = styled.h2`
   font-size: 1.5rem;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 600;
   color: ${({ theme }) => theme.textForm}
 `
 
@@ -108,7 +118,7 @@ export const input = styled.input.attrs(({ name }) => ({
   background: ${({ theme }) => theme.inputBackground};
   border-radius: 0.5rem;
   border: 0;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   font-size: 1rem;
   color: ${({ theme }) => theme.inputText};
 
@@ -122,7 +132,7 @@ export const input = styled.input.attrs(({ name }) => ({
     }
   }
 
-    @media(min-width: 575px) and (max-width: 613px){
+  @media(min-width: 467px) and (max-width: 614px){
     margin: 5px;
   }
 `;
@@ -139,6 +149,8 @@ export const select = styled.select`
   outline: 0ch;
   font-size: 1rem;
   color: ${({ theme }) => theme.inputText};
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 400;
 `
 
 export const label = styled.label`
@@ -149,7 +161,7 @@ export const label = styled.label`
 
 export const leafletMap = styled(Map)`
   width: 100%;
-  height: 35vh;
+  height: 20rem;
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
 `;
@@ -162,13 +174,15 @@ export const button = styled.button`
   color: #fff;
   font-weight: bold;
   outline: none;
-  font-size: 1.5vw;
+  font-size: 1rem;
   border: 0;
   align-self: flex-end;
   margin-top: 3rem;
   transition: background-color 0.2s;
   cursor: pointer;
   padding: 0 1.25rem 0 3.5rem;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 800;
 
   &:hover {
     background: #2fb86e;

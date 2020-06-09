@@ -16,7 +16,9 @@ const Home: React.FC<Toggle> = ({ theme, toggleTheme }) => {
       <S.Content>
         <S.Header>
           <img src={logo} alt="logotipo do ecoleta" />
-          <ToggleTheme theme={theme} toggleTheme={toggleTheme} />
+          <S.div>
+            <ToggleTheme theme={theme} toggleTheme={toggleTheme} />
+          </S.div>
         </S.Header>
         <S.Main>
           <S.H1>Seu marketplace de coleta de resíduos.</S.H1>

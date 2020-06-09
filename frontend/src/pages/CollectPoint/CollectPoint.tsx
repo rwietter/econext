@@ -137,7 +137,7 @@ const CollectPoint = () => {
 
     saveDataOnDatabase(data);
 
-    // await api.post('points', data);
+    await api.post('points', data);
     if (name && email && whatsapp && uf && city && latitude && longitude && items) {
       setOpen(true);
     } else {
@@ -165,7 +165,7 @@ const CollectPoint = () => {
         <img src={logo} alt="logo do ecoleta" />
         <S.link to="/">
           <S.fiArrowLeft size={24} />
-          <p>Voltar para a página de cadastro</p>
+          <p style={{ fontSize: '1rem' }}>Voltar para a página de cadastro</p>
         </S.link>
       </S.Header>
       <S.form action="" onSubmit={handleSubmit}>

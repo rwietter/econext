@@ -36,6 +36,12 @@ const Header = styled.header`
   }
 `;
 
+export const div = styled.div`
+  @media(max-width: 261px){
+    margin: 1.5rem 0 1rem 0;
+  }
+`;
+
 const Main = styled.main`
   flex: 1;
   max-width: 30rem;
@@ -51,6 +57,7 @@ const Main = styled.main`
 const H1 = styled.h1`
   font-size: 2.1rem;
   color: ${({ theme }) => theme.text};
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
 
   @media (max-width: 9em) {
     font-size: 2rem;
@@ -71,18 +78,20 @@ const P = styled.p`
 const StyledLink = styled(Link)`
   width: 100%;
   max-width: 22rem;
-  height: 3.5rem;
+  height: 3.4rem;
   background: #34cb79;
-  border-radius: 0.3rem;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   overflow: hidden;
   text-decoration: none;
-  margin-top: 10vh;
+  margin-top: 8vh;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
 
   &:hover {
     background: #2fb86e;
