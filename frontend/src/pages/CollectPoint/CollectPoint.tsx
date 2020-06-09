@@ -1,4 +1,5 @@
 import React, { useEffect, useState, ChangeEvent, FormEvent } from 'react';
+import { Link } from 'react-router-dom';
 import { TileLayer, Marker } from 'react-leaflet';
 import { LeafletMouseEvent } from 'leaflet';
 import axios from 'axios';
@@ -136,7 +137,7 @@ const CollectPoint = () => {
 
     saveDataOnDatabase(data);
 
-    await api.post('points', data);
+    // await api.post('points', data);
     if (name && email && whatsapp && uf && city && latitude && longitude && items) {
       setOpen(true);
     } else {
@@ -259,7 +260,7 @@ const CollectPoint = () => {
           </div>
         </div>
       </S.form>
-      {open && <Modal isOpen={open} setClose={setModalClose} />}
+      <Link to="/">{open && <Modal isOpen={open} setClose={setModalClose} />}</Link>
     </S.CreatePointDiv>
   );
 };

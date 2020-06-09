@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
-import { FiArrowLeft, FiCheck } from 'react-icons/fi';
+import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import { Map } from 'react-leaflet';
 
 export const CreatePointDiv = styled.div`
   width: 100%;
-  max-width: 1100px;
+  max-width: 58rem;
   margin: 0 auto;
 `
 
 export const Header = styled.header`
-  margin-top: 48px;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,23 +30,27 @@ export const fiArrowLeft = styled(FiArrowLeft)`
 `
 
 export const form = styled.form`
-  margin: 80px auto;
-  padding: 64px;
-  max-width: 730px;
+  margin: 5rem auto;
+  padding: 4rem;
+  max-width: 40rem;
   background: ${({ theme }) => theme.form};
-  border-radius: 8px;
+  border-radius: 0.5rem;
 
   display: flex;
   flex-direction: column;
+
+  @media(max-width: 683px){
+    padding: 2rem;
+  }
 `
 
 export const h1 = styled.h1`
-  font-size: 36px;
+  font-size: 2rem;
   color: ${({ theme }) => theme.textForm}
 `
 
 export const fieldset = styled.fieldset`
-  margin-top: 64px;
+  margin-top: 3rem;
   min-inline-size: auto;
   border: 0;
 `
@@ -56,26 +60,25 @@ export const legend = styled.legend`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 `
 
 export const h2 = styled.h2`
-  font-size: 24px;
+  font-size: 1.5rem;
   color: ${({ theme }) => theme.textForm}
 `
 
 export const span = styled.span`
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: normal;
   color: ${({ theme }) => theme.textForm};
 `
 
 export const field = styled.div`
   flex: 1;
-
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 
   & + & {
     margin-left: 2rem;
@@ -84,11 +87,18 @@ export const field = styled.div`
   &:disabled {
     cursor: not-allowed;
   }
-`
+
+  @media(max-width: 613px){
+    & + & {
+      margin-left: 0;
+    }
+  }
+`;
 
 export const fieldGroup = styled.div`
   flex: 1;
   display: flex;
+  flex-wrap: wrap;
 `
 
 export const input = styled.input.attrs(({ name }) => ({
@@ -105,6 +115,16 @@ export const input = styled.input.attrs(({ name }) => ({
   &::placeholder{
     color: ${({ theme }) => theme.select};
   }
+
+  @media(max-width: 612px){
+    & + & {
+      margin-left: 1rem;
+    }
+  }
+
+    @media(min-width: 575px) and (max-width: 613px){
+    margin: 5px;
+  }
 `;
 
 export const select = styled.select`
@@ -113,39 +133,39 @@ export const select = styled.select`
   appearance: none;
   flex: 1;
   background: ${({ theme }) => theme.inputBackground};
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: 0;
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
   outline: 0ch;
-  font-size: 16px;
+  font-size: 1rem;
   color: ${({ theme }) => theme.inputText};
 `
 
 export const label = styled.label`
-  font-size: 14px;
-  margin-bottom: 8px;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
   color: ${({ theme }) => theme.textForm};
 `
 
 export const leafletMap = styled(Map)`
   width: 100%;
-  height: 350px;
-  border-radius: 8px;
-  margin-bottom: 24px;
+  height: 35vh;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
 `;
 
 export const button = styled.button`
-  width: 290px;
-  height: 56px;
+  width: 70%;
+  height: 4rem;
   background: ${(props) => props.theme.primaryColor};
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: #fff;
   font-weight: bold;
   outline: none;
-  font-size: 16px;
+  font-size: 1.5vw;
   border: 0;
   align-self: flex-end;
-  margin-top: 40px;
+  margin-top: 3rem;
   transition: background-color 0.2s;
   cursor: pointer;
   padding: 0 1.25rem 0 3.5rem;
@@ -153,19 +173,22 @@ export const button = styled.button`
   &:hover {
     background: #2fb86e;
   }
+
+  @media(max-width: 452px){
+    width: 100%
+  }
 `
 
-export const buttonIcon = styled(FiCheck) `
-  width: 55px;
-  height: 50px;
-  background: ${(props) => props.theme.primaryColor};
+export const buttonIcon = styled(FiArrowRight) `
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 0.5rem;
   outline: none;
   color: #fff;
   font-weight: bold;
   border: 0;
   align-self: flex-end;
-  margin-top: 2.5rem;
+  margin: 3.7rem 0 0 0.5rem;
   cursor: default;
   position: absolute;
 `
@@ -173,16 +196,23 @@ export const buttonIcon = styled(FiCheck) `
 export const ulGrid = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 1rem;
   list-style: none;
+
+  @media(max-width: 719px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media(max-width: 450px){
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 
 export const liGrid = styled.li`
   background: ${({ theme }) => theme.inputBackground};
-  border: 2px ${({ theme }) => theme.inputText};
-  height: 180px;
+  border: 0.125rem ${({ theme }) => theme.inputText};
+  height: 11.25rem;
   border-radius: 8px;
-  padding: 32px 24px 16px;
+  padding: 2rem 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
