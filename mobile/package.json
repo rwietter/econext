@@ -27,7 +27,7 @@
     "react-native-safe-area-context": "0.7.3",
     "react-native-screens": "~2.9.0",
     "react-native-svg": "11.0.1",
-    "react-native-web": "~0.12.3",
+    "react-native-web": "~0.13.4",
     "expo-location": "~8.1.0",
     "expo-mail-composer": "~8.2.1"
   },
