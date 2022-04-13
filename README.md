@@ -1,5 +1,5 @@
 <h1 align="center">
-    ♻️ e-Coleta
+    ♻️ Echonext
 </h1>
 
 <br/>
